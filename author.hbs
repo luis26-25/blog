@@ -1,0 +1,31 @@
+{{!-- Sitio para el autor --}}
+
+{{!< default}}
+
+{{#author}}
+    {{!-- Header --}}
+    {{> "header"}}
+
+    {{!-- Portada --}}
+    {{> "cover-author"}}
+
+    {{!-- Menú --}}
+    {{> "menu"}}
+
+    {{!-- Busqueda--}}
+    {{> "search"}}
+
+{{/author}}
+
+{{!-- Contenido --}}
+<main class="post__content" role="main">
+
+    {{> "loop"}}
+
+</main>
+
+{{!-- Paginación --}}
+{{pagination}}
+
+{{!-- Footer --}}
+{{> "footer"}}
